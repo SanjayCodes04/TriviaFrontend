@@ -1,0 +1,39 @@
+
+
+
+.answerOption {
+  cursor: pointer;
+  --answer-option-color: var(--bs-gray-200);
+  width: calc(25% - 0.5rem);
+
+  border-color: var(--answer-option-color);
+  border-width: var(--bs-list-group-border-width);
+  /* We need to overwrite .list-group-item + .list-group-item */
+  border-top-width: var(--bs-list-group-border-width)!important;
+  box-shadow: 0 0 0 2px var(--answer-option-color);
+  border-radius: .5rem;
+  font-weight: bold;
+
+}
+.answerOptionSelected {
+  --answer-option-color: var(--bs-primary);
+  --answer-option-text-weight: "bold";
+}
+.answerOptionValid {
+  --answer-option-color: darkgreen;
+  --answer-option-text-color: darkgreen;
+}
+.answerOptionInValid {
+  --answer-option-color: darkred;
+  --answer-option-text-color: darkred;
+}
+
+.answerOptionLabel {
+  color: var(--answer-option-text-color, var(--bs-body-color));
+  font-weight: var(--answer-option-text-weight, normal);
+}
+
+.questionCard {
+  --bs-body-bg: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(1rem);
+}

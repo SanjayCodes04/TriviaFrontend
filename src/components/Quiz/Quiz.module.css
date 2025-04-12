@@ -1,0 +1,7 @@
+.quizTitle,
+.errorTitle {
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 1rem black;
+}
+

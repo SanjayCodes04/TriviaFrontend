@@ -1,0 +1,27 @@
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light;
+  color: black;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+    url('images/pexels-creative-vix-9754.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(100, 100, 100);
+}
+
+#root {
+  min-height: 100vh;
+}
