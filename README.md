@@ -1,30 +1,51 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Cloud-Native Full Stack Web Application using AWS Services
 
-Currently, two official plugins are available:
+This project is a scalable and cloud-native full-stack web application built using React (frontend), Node.js (backend), and Amazon DocumentDB (database). It leverages various AWS services for hosting, containerization, and CI/CD to ensure high availability and performance.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Frontend** built with React and hosted on **AWS S3**.
+- **CDN delivery** via **CloudFront** for optimized performance.
+- **Backend** built with Node.js and containerized using **Docker**.
+- **Database** powered by **Amazon DocumentDB** for scalable NoSQL storage.
+- **CI/CD pipelines** implemented via **CodeBuild** for automated deployments.
+- **Backend deployed** on **AWS App Runner** using images from **ECR**.
+- **Fully managed DevOps pipeline** ensuring continuous delivery and scalability.
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Tech Stack
+
+- **Frontend:** React.js
+- **Backend:** Node.js
+- **Database:** Amazon DocumentDB
+- **Containerization:** Docker
+- **Cloud Services:** 
+  - AWS S3 (Frontend hosting)
+  - AWS CloudFront (CDN)
+  - AWS CodeBuild (CI/CD)
+  - AWS App Runner (Backend deployment)
+  - AWS ECR (Container registry)
+
+---
+
+## Architecture Diagram
+
+```
+[ React (Frontend) ] → [ S3 + CloudFront ]
+                             ↓
+               [ CodeBuild + Docker + ECR ]
+                             ↓
+                  [ App Runner (Node.js) ]
+                             ↓
+                   [ Amazon DocumentDB ]
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+---
+
+## Contact
+
+For queries or collaboration, feel free to reach out at [sanjaysadasivam1227@example.com](mailto:sanjaysadasivam1227@gmail.com@example.com)
